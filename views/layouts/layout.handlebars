@@ -26,6 +26,17 @@
                 </form>
             </div>
         {{/if}}
+
+        {{#if cerrarSesion}}
+            <div class="cerrar-sesion">
+                <p>Hola! {{nombre}}</p>
+                {{#if imagen}}
+                    <img src="/uploads/perfiles/{{imagen}}" class="admin-perfil" alt="Foto de perfil">
+                {{/if}}
+                <a href="/administracion">Administracion</a>
+                <a href="/cerrar-sesion">Cerrar Sesion</a>
+            </div>
+        {{/if}}
     </div>
 
     <header class="site-header contenedor separador">
@@ -43,6 +54,13 @@
     </header>
 
     <div class="contenido-principal contenedor">
+        {{#if mensajes}}
+            <div class="alertas">
+                    {{#mostrarAlerta mensajes}}
+                        {{{html}}}
+                    {{/mostrarAlerta}}
+            </div>
+        {{/if}}
         {{{body}}}
     </div>
 

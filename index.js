@@ -12,6 +12,8 @@ import cookieParser from "cookie-parser"
 import session from "express-session"
 import MongoStore from "connect-mongo"
 import helpers from "./helpers/handlebars.js"
+import flash from "connect-flash"
+import passport from "./config/passport.js"
 
 const app = express()
 
@@ -48,10 +50,24 @@ app.use(session({
     store: MongoStore.create({ mongoUrl : process.env.DATABASE })
 }))
 
+// Inicializar passport
+app.use(passport.initialize());
+app.use(passport.session());
+
+
 // static files
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 app.use(express.static(path.join(__dirname, 'public')))
+
+// Alertas y flash messages
+app.use(flash())
+
+//Crear nuestro middleware
+app.use((req, res, next) => {
+    res.locals.mensajes = req.flash()
+    next()
+})
 
 app.use("/", router)
 
