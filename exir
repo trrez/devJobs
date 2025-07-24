@@ -1,0 +1,37 @@
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mindex d6517b2..e792dfa 100644[m
+[1m--- a/.gitignore[m
+[1m+++ b/.gitignore[m
+[36m@@ -1,6 +1,5 @@[m
+ .env[m
+ node_modules/[m
+ .DS_Store[m
+[31m-public/uploads/cv/*[m
+[31m-public/uploads/perfiles/*[m
+[32m+[m[41m[m
+ .env[m
+\ No newline at end of file[m
+[1mdiff --git a/public/uploads/perfiles/-oScfaTW4.jpeg b/public/uploads/perfiles/-oScfaTW4.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 57b0124..0000000[m
+Binary files a/public/uploads/perfiles/-oScfaTW4.jpeg and /dev/null differ
+[1mdiff --git a/public/uploads/perfiles/24jmVcKrm.jpeg b/public/uploads/perfiles/24jmVcKrm.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 57b0124..0000000[m
+Binary files a/public/uploads/perfiles/24jmVcKrm.jpeg and /dev/null differ
+[1mdiff --git a/public/uploads/perfiles/8cfI1ioBA.jpeg b/public/uploads/perfiles/8cfI1ioBA.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 57b0124..0000000[m
+Binary files a/public/uploads/perfiles/8cfI1ioBA.jpeg and /dev/null differ
+[1mdiff --git a/public/uploads/perfiles/E-FM4KC4Y.jpeg b/public/uploads/perfiles/E-FM4KC4Y.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 3904d0e..0000000[m
+Binary files a/public/uploads/perfiles/E-FM4KC4Y.jpeg and /dev/null differ
+[1mdiff --git a/public/uploads/perfiles/beAH6HnfL.jpeg b/public/uploads/perfiles/beAH6HnfL.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 57b0124..0000000[m
+Binary files a/public/uploads/perfiles/beAH6HnfL.jpeg and /dev/null differ
+[1mdiff --git a/public/uploads/perfiles/q3hj4azww.jpeg b/public/uploads/perfiles/q3hj4azww.jpeg[m
+[1mdeleted file mode 100644[m
+[1mindex 57b0124..0000000[m
+Binary files a/public/uploads/perfiles/q3hj4azww.jpeg and /dev/null differ
