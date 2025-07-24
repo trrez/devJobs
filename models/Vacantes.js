@@ -54,6 +54,13 @@ vacanteSchema.pre('save', async function(){
     this.url = `${slug}-${shortid.generate()}`
 })
 
+// Añadir índice de texto para búsquedas con $text
+vacanteSchema.index({
+    titulo: 'text',
+    descripcion: 'text',
+    empresa: 'text'
+  })
+
 const Vacante =mongoose.model('Vacante', vacanteSchema)
 
 export default Vacante
